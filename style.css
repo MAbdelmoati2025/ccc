@@ -3,13 +3,13 @@ body {
     font-family: Arial, sans-serif;  /* تحديد نوع الخط في الموقع */
     margin: 0;                      /* إزالة الهوامش من الصفحة */
     padding: 0;                     /* إزالة الحشو داخل الصفحة */
-    background-color: #ffffff;      /* تحديد لون خلفية الموقع بالأصفر */
+    background-color: #FFF2CC;      /* تحديد لون خلفية الموقع بالأصفر */
     color: #333;                    /* تحديد لون النصوص في الصفحة */
 }
 
 /* Header styling */
 header {
-    background-color: #fff2cc;      /* تحديد لون خلفية الرأس بالأصفر */
+    background-color: #3d85c6;      /* تحديد لون خلفية الرأس بالأصفر */
     color: white;                   /* تحديد لون النص في الرأس */
     text-align: center;             /* محاذاة النص في المنتصف */
     padding: 1rem 0;                /* إضافة حشو للرأس */
@@ -23,7 +23,7 @@ main {
 
 /* Button styling */
 button {
-    background-color: #ffcc00;      /* تحديد لون خلفية الزر بالأصفر */
+    background-color: #000000;      /* تحديد لون خلفية الزر بالأصفر */
     color: white;                   /* تحديد لون النص في الزر */
     border: none;                   /* إزالة حدود الزر */
     padding: 0.5rem 1rem;           /* إضافة حشو داخلي للزر */
@@ -39,7 +39,7 @@ button:hover {
 
 /* Footer styling */
 footer {
-    background-color: #fff700;      /* تحديد لون خلفية التذييل بالأصفر */
+    background-color: #3d85c6;      /* تحديد لون خلفية التذييل بالأصفر */
     color: white;                   /* تحديد لون النص في التذييل */
     text-align: center;             /* محاذاة النص في المنتصف */
     padding: 1rem 0;                /* إضافة حشو للتذييل */
