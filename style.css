@@ -34,7 +34,7 @@ button {
 }
 
 button:hover {
-    background-color: #e6b800;      /* تغيير لون خلفية الزر عند المرور عليه إلى الأصفر الداكن */
+    background-color: #f09800;      /* تغيير لون خلفية الزر عند المرور عليه إلى الأصفر الداكن */
 }
 
 /* Footer styling */
