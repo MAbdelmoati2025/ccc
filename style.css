@@ -54,6 +54,16 @@ main {
 section {
     margin-bottom: 3rem;
 }
+/* تنسيق المربع الملون */
+.colored-box {
+    background-color: #4CAF50; /* تغيير اللون إلى اللون الذي تريده */
+    color: white; /* تغيير اللون النص إلى الأبيض */
+    padding: 20px; /* إضافة مسافة داخلية حول النص */
+    border-radius: 10px; /* جعل زوايا المربع مدورة */
+    margin: 20px; /* إضافة مسافة حول المربع */
+    width: fit-content; /* لتحديد عرض المربع بناءً على المحتوى */
+}
+
 
 /* Footer styling */
 footer {
