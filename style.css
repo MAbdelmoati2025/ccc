@@ -1,49 +1,49 @@
 /* General styling for the website */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffd966;
-    color: #333;
+    font-family: Arial, sans-serif;  /* تحديد نوع الخط في الموقع */
+    margin: 0;                      /* إزالة الهوامش من الصفحة */
+    padding: 0;                     /* إزالة الحشو داخل الصفحة */
+    background-color: #fff700;      /* تحديد لون خلفية الموقع بالأصفر */
+    color: #333;                    /* تحديد لون النصوص في الصفحة */
 }
 
 /* Header styling */
 header {
-    background-color: #ffd966;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
+    background-color: #fff700;      /* تحديد لون خلفية الرأس بالأصفر */
+    color: white;                   /* تحديد لون النص في الرأس */
+    text-align: center;             /* محاذاة النص في المنتصف */
+    padding: 1rem 0;                /* إضافة حشو للرأس */
 }
 
 /* Main content styling */
 main {
-    padding: 2rem;
-    text-align: center;
+    padding: 2rem;                  /* إضافة حشو للمحتوى الرئيسي */
+    text-align: center;             /* محاذاة النصوص في المنتصف */
 }
 
 /* Button styling */
 button {
-    background-color: #03dac5;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    background-color: #ffcc00;      /* تحديد لون خلفية الزر بالأصفر */
+    color: white;                   /* تحديد لون النص في الزر */
+    border: none;                   /* إزالة حدود الزر */
+    padding: 0.5rem 1rem;           /* إضافة حشو داخلي للزر */
+    font-size: 1rem;                /* تحديد حجم الخط في الزر */
+    cursor: pointer;                /* تغيير شكل المؤشر عند مرور الفأرة فوق الزر */
+    border-radius: 5px;             /* تحديد زوايا الزر بشكل دائري */
+    transition: background-color 0.3s ease; /* إضافة تأثير عند تغيير اللون */
 }
 
 button:hover {
-    background-color: #018786;
+    background-color: #e6b800;      /* تغيير لون خلفية الزر عند المرور عليه إلى الأصفر الداكن */
 }
 
 /* Footer styling */
 footer {
-    background-color: #6200ea;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+    background-color: #fff700;      /* تحديد لون خلفية التذييل بالأصفر */
+    color: white;                   /* تحديد لون النص في التذييل */
+    text-align: center;             /* محاذاة النص في المنتصف */
+    padding: 1rem 0;                /* إضافة حشو للتذييل */
+    position: absolute;             /* تحديد التذييل ليكون في الأسفل */
+    width: 100%;                    /* تحديد عرض التذييل ليكون بنفس عرض الصفحة */
+    bottom: 0;                      /* تثبيت التذييل في أسفل الصفحة */
 }
