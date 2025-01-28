@@ -1,10 +1,11 @@
 /* General styling for the website */
 body {
-    font-family: Arial, sans-serif;
+   background-image: url('E:\picture\All\GHbDSmSWgAAgs7S.jpeg');
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating the image */
     margin: 0;
     padding: 0;
-    background-color: #fac21e;
-    color: #333;
 }
 
 /* Header styling with logo and navigation bar */
