@@ -42,7 +42,7 @@ body {
     font-family: Arial, sans-serif; /* تحديد نوع الخط */
     background-image: url('123.jpg'); /* مسار الصورة الخلفية */
     background-size: cover; /* ضبط حجم الصورة لتغطية كامل الصفحة */
-    background-position: center; /* ضبط الصورة في المنتصف */
+    background-position: left; /* ضبط الصورة في المنتصف */
     background-attachment: fixed; /* جعل الصورة ثابتة عند التمرير */
     background-repeat: no-repeat; /* منع تكرار الصورة */
     padding-top: 80px; /* إضافة مسافة من أعلى الصفحة حتى لا يتم تغطية المحتوى بسبب الرأس الثابت */
