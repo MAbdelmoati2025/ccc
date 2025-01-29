@@ -1,52 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8"> <!-- تحديد الترميز المستخدم للصفحة -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- لضمان استجابة التصميم على مختلف الأجهزة -->
-    <title>Basic Website</title> <!-- عنوان الصفحة الذي يظهر في تبويب المتصفح -->
-    <!-- رابط ملف CSS لتنسيق الصفحة -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- مربع ملون يحتوي على النصوص -->
-    <div class="colored-box">
-        <p>Welcome to CodeX</p>
-        <p>Set your kids free to code & collaborate! Scratch, AI, Mobile Apps, Game Dev & Python</p>
-        <p><span class="contact-us">Contact us</span> for more information.</p>
-    </div>
-<div class="image-box">
-            <img src="123.png" alt="Image" />
-        </div>
-    <!-- قسم الرأس الذي يحتوي على الشعار وروابط التنقل -->
-    <header>
-        <div class="logo">
-            <img src="checked.png" alt="MO3TI" /> <!-- الشعار الخاص بالموقع -->
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li> <!-- رابط إلى صفحة الرئيسية -->
-                <li><a href="#mentors">Mentors</a></li> <!-- رابط إلى صفحة الموجهين -->
-                <li><a href="#bootcamps">Bootcamps</a></li> <!-- رابط إلى صفحة الدورات التدريبية -->
-                <li><a href="#about">About</a></li> <!-- رابط إلى صفحة "حول" -->
-                <li><a href="#contact">Contact</a></li> <!-- رابط إلى صفحة الاتصال -->
-            </ul>
-        </nav>
-    </header>
+/* تنسيق القسم الذي يحتوي على المربع والصورة */
+.content-wrapper {
+    display: flex; /* استخدام flexbox لتنسيق العناصر جنبًا إلى جنب */
+    align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
+    justify-content: center; /* محاذاة العناصر أفقيًا في المنتصف */
+    gap: 20px; /* إضافة مسافة بين المربع والصورة */
+}
 
-    <!-- منطقة المحتوى الرئيسية -->
-    <main>
-        <section id="welcome-box">
-<p style="font-size: 48px; font-weight: bold; color: #000000; text-transform: uppercase; letter-spacing: 3px;">Code The Future</p>
+/* تنسيق المربع الملون */
+.colored-box {
+    background-color: #4CAF50; /* تغيير اللون إلى اللون الذي تريده */
+    color: white; /* تغيير لون النص إلى الأبيض */
+    padding: 20px; /* إضافة مسافة داخلية حول النص */
+    border-radius: 10px; /* جعل الزوايا مدورة */
+    width: fit-content; /* تحديد عرض المربع بناءً على المحتوى */
+}
 
-        </section>
-    </main>
-
-    <!-- قسم التذييل (الفوتر) -->
-    <footer>
-        <p>&copy; 2025 My Project</p> <!-- التذييل يحتوي على معلومات حقوق الطبع والنشر -->
-    </footer>
-
-    <!-- رابط ملف JavaScript لإضافة التفاعلية للصفحة -->
-    <script src="script.js"></script>
-</body>
-</html>
+/* تنسيق الصورة */
+.image-box img {
+    max-width: 100%; /* تحديد الحد الأقصى لعرض الصورة ليكون نسبة مئوية */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    border-radius: 10px; /* إضافة حواف مدورة للصورة */
+    width: 300px; /* تحديد عرض الصورة */
+}
