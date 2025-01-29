@@ -1,103 +1,103 @@
+/* ملف CSS */
+
 /* تنسيق الرأس (Header) */
 header {
-    background-color: #333; /* خلفية رأس الصفحة باللون الداكن */
-    color: white; /* نص الروابط باللون الأبيض */
-    text-align: right; /* محاذاة النص في المنتصف */
-    padding: 20px 0; /* إضافة حشوة داخلية */
-    position: fixed; /* جعل الرأس ثابت في الأعلى */
-    top: 0; /* تثبيته في أعلى الصفحة */
-    width: 100%; /* ملء العرض بالكامل */
-    z-index: 10; /* لجعل الرأس فوق المحتوى */
+    background-color: #333;
+    color: white;
+    text-align: right;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
 
 /* تنسيق قائمة الروابط في الرأس */
 header nav ul {
-    list-style-type: none; /* إزالة النقاط من القائمة */
+    list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex; /* ترتيب العناصر بجانب بعض */
-    justify-content: right; /* محاذاة العناصر في المنتصف */
+    display: flex;
+    justify-content: right;
 }
 
-/* تنسيق كل عنصر في القائمة */
 header nav ul li {
     margin: 0 15px;
 }
 
-/* تنسيق الروابط داخل قائمة الرأس */
 header nav ul li a {
-    text-decoration: none; /* إزالة الخط السفلي من الرابط */
-    color: white; /* النص باللون الأبيض */
-    font-weight: bold; /* جعل النص ثقيل */
-    font-size: 16px; /* تحديد حجم الخط */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
 }
 
-/* تأثير عند التمرير على الروابط */
 header nav ul li a:hover {
-    color: #4CAF50; /* تغيير اللون عند التمرير */
+    color: #4CAF50;
 }
 
-/* تنسيق الجسم العام للصفحة */
+/* تنسيق الجسم العام */
 body {
-    font-family: Arial, sans-serif; /* تحديد نوع الخط */
-    background-image: url('123.jpg'); /* مسار الصورة الخلفية */
-    background-size: cover; /* ضبط حجم الصورة لتغطية كامل الصفحة */
-    background-position: center; /* ضبط الصورة في المنتصف */
-    background-attachment: fixed; /* جعل الصورة ثابتة عند التمرير */
-    background-repeat: no-repeat; /* منع تكرار الصورة */
-    padding-top: 80px; /* إضافة مسافة من أعلى الصفحة حتى لا يتم تغطية المحتوى بسبب الرأس الثابت */
+    font-family: Arial, sans-serif;
+    background-image: url('123.jpg');
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+}
+
+/* ترتيب المربع والصورة بجانب بعض */
+.content-wrapper {
+    display: flex;
+    align-items: center; /* محاذاة العناصر في المنتصف */
+    justify-content: center; /* توسيط العناصر داخل القسم */
+    gap: 20px; /* إضافة مسافة بين العناصر */
+    margin: 100px auto;
+    max-width: 900px;
 }
 
 /* تنسيق المربع الملون */
 .colored-box {
-    background-color: #4CAF50; /* اللون الخلفي للمربع (اخضر) */
-    color: white; /* اللون الأبيض للنصوص داخل المربع */
-    padding: 10px; /* إضافة مسافة داخلية حول النص */
-    border-radius: 10px; /* جعل الزوايا مدورة */
-    width: fit-content; /* تحديد عرض المربع بناءً على المحتوى */
-    text-align: Center; /* محاذاة النص في المنتصف */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة تأثير ظل للمربع */
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* تنسيق النصوص داخل المربع */
 .colored-box p {
-    font-size: 18px; /* حجم الخط داخل المربع */
-    margin: 10px 0; /* إضافة مسافة فوق وتحت النصوص */
+    font-size: 18px;
+    margin: 10px 0;
 }
 
-/* تنسيق الرابط "Contact us" داخل المربع */
 .contact-us {
-    color: #FFD700; /* تغيير لون الرابط إلى الذهبي */
-    text-decoration: none; /* إزالة الخط السفلي */
+    color: #FFD700;
+    text-decoration: none;
 }
 
-/* تأثير عند التمرير على الرابط "Contact us" */
 .contact-us:hover {
-    text-decoration: underline; /* إضافة خط تحت الرابط عند التمرير */
+    text-decoration: underline;
 }
 
-/* تنسيق الصورة الموجودة بجانب المربع */
+/* تنسيق الصورة */
 .image-box img {
-    max-width: 100%; /* تحديد الحد الأقصى لعرض الصورة ليكون نسبة مئوية */
-    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
-    border-radius: 10px; /* إضافة حواف مدورة للصورة */
-    width: 300px; /* تحديد عرض الصورة */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة تأثير ظل للصورة */
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* تنسيق الفوتر */
 footer {
-    background-color: #333; /* خلفية الفوتر باللون الداكن */
-    color: white; /* نص الفوتر باللون الأبيض */
-    text-align: center; /* محاذاة النص في المنتصف */
-    padding: 20px 0; /* إضافة حشوة داخل الفوتر */
-    position: fixed; /* جعل الفوتر ثابت في الأسفل */
-    bottom: 0; /* تثبيته في أسفل الصفحة */
-    width: 100%; /* ملء الفوتر العرض بالكامل */
-}
-
-/* تنسيق النص داخل الفوتر */
-footer p {
-    margin: 0; /* إزالة الهوامش حول النص */
-    font-size: 14px; /* تحديد حجم الخط */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
