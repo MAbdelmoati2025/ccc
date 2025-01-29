@@ -1,65 +1,51 @@
-/* تنسيق الجسم العام للصفحة */
-body {
-    font-family: Arial, sans-serif; /* تحديد نوع الخط */
-    background-image: url('123.jpg'); /* مسار الصورة بين علامتي اقتباس */
-    background-size: cover; /* لضبط حجم الصورة لتغطية كامل الصفحة */
-    background-position: center; /* لضبط الصورة في منتصف الصفحة */
-    background-attachment: fixed; /* لجعل الصورة ثابتة عند التمرير */
-    background-repeat: no-repeat; /* منع تكرار الصورة */
+/* تنسيق الرأس (Header) */
+header {
+    background-color: #333; /* خلفية رأس الصفحة باللون الداكن */
+    color: white; /* نص الروابط باللون الأبيض */
+    text-align: center; /* محاذاة النص في المنتصف */
+    padding: 20px 0; /* إضافة حشوة داخلية */
+    position: fixed; /* جعل الرأس ثابت في الأعلى */
+    top: 0; /* تثبيته في أعلى الصفحة */
+    width: 100%; /* ملء العرض بالكامل */
+    z-index: 10; /* لجعل الرأس فوق المحتوى */
 }
 
-/* تنسيق الشعار في رأس الصفحة */
-header .logo img {
-    width: 100px; /* تحديد عرض الشعار */
-    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
-}
-
-header .logo {
-    display: flex; /* محاذاة الصورة والنص بجانب بعض */
-    align-items: center; /* محاذاة العناصر عموديًا */
-    gap: 10px; /* مسافة بين الشعار والنص */
-}
-
-/* تنسيق النص بجانب الشعار */
-.logo-text {
-    font-size: 24px; /* تحديد حجم النص بجانب الشعار */
-    font-weight: bold; /* جعل النص ثقيل */
-}
-
-/* تنسيق قائمة التنقل */
-nav ul {
+/* تنسيق قائمة الروابط في الرأس */
+header nav ul {
     list-style-type: none; /* إزالة النقاط من القائمة */
-    padding: 0; /* إزالة الحشوة الافتراضية */
-    margin: 0; /* إزالة الهوامش الافتراضية */
+    padding: 0;
+    margin: 0;
     display: flex; /* ترتيب العناصر بجانب بعض */
     justify-content: center; /* محاذاة العناصر في المنتصف */
 }
 
 /* تنسيق كل عنصر في القائمة */
-nav ul li {
-    margin: 0 15px; /* إضافة مسافة بين العناصر */
+header nav ul li {
+    margin: 0 15px;
 }
 
-/* تنسيق الروابط داخل قائمة التنقل */
-nav ul li a {
+/* تنسيق الروابط داخل قائمة الرأس */
+header nav ul li a {
     text-decoration: none; /* إزالة الخط السفلي من الرابط */
-    color: #333; /* تحديد اللون الافتراضي للرابط */
+    color: white; /* النص باللون الأبيض */
     font-weight: bold; /* جعل النص ثقيل */
-    font-size: 16px; /* حجم الخط للرابط */
+    font-size: 16px; /* تحديد حجم الخط */
 }
 
 /* تأثير عند التمرير على الروابط */
-nav ul li a:hover {
+header nav ul li a:hover {
     color: #4CAF50; /* تغيير اللون عند التمرير */
 }
 
-/* تنسيق القسم الذي يحتوي على المربع والصورة */
-.content-wrapper {
-    display: flex; /* استخدام flexbox لتنسيق العناصر جنبًا إلى جنب */
-    align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
-    justify-content: center; /* محاذاة العناصر أفقيًا في المنتصف */
-    gap: 20px; /* إضافة مسافة بين المربع والصورة */
-    margin-top: 50px; /* إضافة مسافة من أعلى الصفحة */
+/* تنسيق الجسم العام للصفحة */
+body {
+    font-family: Arial, sans-serif; /* تحديد نوع الخط */
+    background-image: url('123.jpg'); /* مسار الصورة الخلفية */
+    background-size: cover; /* ضبط حجم الصورة لتغطية كامل الصفحة */
+    background-position: center; /* ضبط الصورة في المنتصف */
+    background-attachment: fixed; /* جعل الصورة ثابتة عند التمرير */
+    background-repeat: no-repeat; /* منع تكرار الصورة */
+    padding-top: 80px; /* إضافة مسافة من أعلى الصفحة حتى لا يتم تغطية المحتوى بسبب الرأس الثابت */
 }
 
 /* تنسيق المربع الملون */
