@@ -55,7 +55,7 @@ body {
     padding: 10px; /* إضافة مسافة داخلية حول النص */
     border-radius: 10px; /* جعل الزوايا مدورة */
     width: fit-content; /* تحديد عرض المربع بناءً على المحتوى */
-    text-align: center; /* محاذاة النص في المنتصف */
+    text-align: left; /* محاذاة النص في المنتصف */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة تأثير ظل للمربع */
 }
 
