@@ -10,9 +10,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 10;
-        display: flex;
-    justify-content: space-between; /* توزيع العناصر على الجوانب */
-    align-items: center; /* محاذاة العناصر عموديًا */
+
 }
 /* تنسيق صورة اللوجو */
 .header-logo {
