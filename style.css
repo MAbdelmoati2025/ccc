@@ -1,98 +1,102 @@
-/* General styling for the website */
+/* تنسيق الجسم العام للصفحة */
 body {
-   background-image: url('E:\picture\All\wallpaperflare.com_wallpaper (10).jpg');
-    background-size: cover; /* Ensures the image covers the entire page */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents repeating the image */
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; /* تحديد نوع الخط */
+    margin: 0; /* إزالة الهوامش الافتراضية */
+    padding: 0; /* إزالة الحشوات الافتراضية */
+    background-color: #f4f4f4; /* خلفية الصفحة */
 }
 
-/* Header styling with logo and navigation bar */
-header {
-    background-color: #6fa8dc;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1rem;
-}
-
-.logo img {
-    height: 50px; /* Adjust size of the logo */
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #018786; /* Color when hovering over a link */
-}
-
-/* Main content styling */
-main {
-    padding: 2rem;
-    text-align: center;
-}
-
-/* Section styling */
-section {
-    margin-bottom: 3rem;
-}
-/* تنسيق المربع الملون */
-/* تنسيق المربع الملون ليظهر في منتصف الصفحة على اليسار */
-/* تنسيق المربع الملون */
+/* تنسيق القسم الذي يحتوي على المربع والصورة */
 .content-wrapper {
     display: flex; /* استخدام flexbox لتنسيق العناصر جنبًا إلى جنب */
     align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
     justify-content: center; /* محاذاة العناصر أفقيًا في المنتصف */
     gap: 20px; /* إضافة مسافة بين المربع والصورة */
-}
-.colored-box {
-    background-color: #5b5b5b; /* تغيير اللون إلى اللون الذي تريده */
-    color: white; /* تغيير لون النص إلى الأبيض */
-    padding: 10px; /* إضافة مسافة داخلية حول النص */
-    border-radius: 0px; /* جعل الزوايا مدورة */
-    margin: 0; /* إزالة المسافة الخارجية */
-    position: absolute; /* تمكين تحديد مكان المربع */
-    top: 50%; /* وضع المربع في منتصف الصفحة عموديًا */
-    left: 10%; /* وضع المربع في الجزء الأيسر من الصفحة */
-    transform: translateY(-50%); /* تحريك المربع ليكون في المنتصف عموديًا */
-    width: fit-content; /* تحديد عرض المربع بناءً على المحتوى */
+    margin-top: 50px; /* إضافة مسافة من أعلى الصفحة */
 }
 
-/* تنسيق صورة GIF */
+/* تنسيق المربع الملون */
+.colored-box {
+    background-color: #4CAF50; /* اللون الخلفي للمربع (اخضر) */
+    color: white; /* اللون الأبيض للنصوص داخل المربع */
+    padding: 20px; /* إضافة مسافة داخلية حول النص */
+    border-radius: 10px; /* جعل الزوايا مدورة */
+    width: fit-content; /* تحديد عرض المربع بناءً على المحتوى */
+    text-align: center; /* محاذاة النص في المنتصف */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة تأثير ظل للمربع */
+}
+
+/* تنسيق النصوص داخل المربع */
+.colored-box p {
+    font-size: 18px; /* حجم الخط داخل المربع */
+    margin: 10px 0; /* إضافة مسافة فوق وتحت النصوص */
+}
+
+/* تنسيق الرابط "Contact us" داخل المربع */
+.contact-us {
+    color: #FFD700; /* تغيير لون الرابط إلى الذهبي */
+    text-decoration: none; /* إزالة الخط السفلي */
+}
+
+/* تأثير عند التمرير على الرابط "Contact us" */
+.contact-us:hover {
+    text-decoration: underline; /* إضافة خط تحت الرابط عند التمرير */
+}
+
+/* تنسيق الصورة الموجودة بجانب المربع */
 .image-box img {
     max-width: 100%; /* تحديد الحد الأقصى لعرض الصورة ليكون نسبة مئوية */
     height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
     border-radius: 10px; /* إضافة حواف مدورة للصورة */
     width: 300px; /* تحديد عرض الصورة */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة تأثير ظل للصورة */
 }
 
+/* تنسيق الشعار في رأس الصفحة */
+header .logo img {
+    width: 150px; /* تحديد عرض الشعار */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+}
 
+/* تنسيق قائمة التنقل */
+nav ul {
+    list-style-type: none; /* إزالة النقاط من القائمة */
+    padding: 0; /* إزالة الحشوة الافتراضية */
+    margin: 0; /* إزالة الهوامش الافتراضية */
+    display: flex; /* ترتيب العناصر بجانب بعض */
+}
 
-/* Footer styling */
+/* تنسيق كل عنصر في القائمة */
+nav ul li {
+    margin: 0 15px; /* إضافة مسافة بين العناصر */
+}
+
+/* تنسيق الروابط داخل قائمة التنقل */
+nav ul li a {
+    text-decoration: none; /* إزالة الخط السفلي من الرابط */
+    color: #333; /* تحديد اللون الافتراضي للرابط */
+    font-weight: bold; /* جعل النص ثقيل */
+    font-size: 16px; /* حجم الخط للرابط */
+}
+
+/* تأثير عند التمرير على الروابط */
+nav ul li a:hover {
+    color: #4CAF50; /* تغيير اللون عند التمرير */
+}
+
+/* تنسيق الفوتر */
 footer {
-    background-color: #6fa8dc;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+    background-color: #333; /* خلفية الفوتر باللون الداكن */
+    color: white; /* نص الفوتر باللون الأبيض */
+    text-align: center; /* محاذاة النص في المنتصف */
+    padding: 20px 0; /* إضافة حشوة داخل الفوتر */
+    position: fixed; /* جعل الفوتر ثابت في الأسفل */
+    bottom: 0; /* تثبيته في أسفل الصفحة */
+    width: 100%; /* ملء الفوتر العرض بالكامل */
+}
+
+/* تنسيق النص داخل الفوتر */
+footer p {
+    margin: 0; /* إزالة الهوامش حول النص */
+    font-size: 14px; /* تحديد حجم الخط */
 }
