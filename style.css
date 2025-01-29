@@ -16,7 +16,7 @@ header nav ul {
     padding: 0;
     margin: 0;
     display: flex; /* ترتيب العناصر بجانب بعض */
-    justify-content: center; /* محاذاة العناصر في المنتصف */
+    justify-content: right; /* محاذاة العناصر في المنتصف */
 }
 
 /* تنسيق كل عنصر في القائمة */
