@@ -1,9 +1,11 @@
 /* تنسيق الجسم العام للصفحة */
 body {
     font-family: Arial, sans-serif; /* تحديد نوع الخط */
-    margin: 0; /* إزالة الهوامش الافتراضية */
-    padding: 0; /* إزالة الحشوات الافتراضية */
-    background-color: #f4f4f4; /* خلفية الصفحة */
+    background-image: url('123.jpg'); /* مسار الصورة بين علامتي اقتباس */
+    background-size: cover; /* لضبط حجم الصورة لتغطية كامل الصفحة */
+    background-position: center; /* لضبط الصورة في منتصف الصفحة */
+    background-attachment: fixed; /* لجعل الصورة ثابتة عند التمرير */
+    background-repeat: no-repeat; /* منع تكرار الصورة */
 }
 
 /* تنسيق القسم الذي يحتوي على المربع والصورة */
