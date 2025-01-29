@@ -59,7 +59,7 @@ body {
 
 /* تنسيق المربع الملون */
 .colored-box {
-    background-color: #4CAF50;
+background-color: rgba(128, 128, 128, 0.7); /* اللون الرمادي مع شفافية 70% */
     color: white;
     padding: 20px;
     border-radius: 10px;
